@@ -104,16 +104,52 @@ export default function Payment() {
         </div>
       </nav>
 
-      {/* Breadcrumb */}
-      <div className="bg-sage-ivory/30 py-4">
+      {/* Progress Steps */}
+      <div className="bg-sage-ivory/30 py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center space-x-2 text-sm">
+          <div className="flex items-center justify-center space-x-8 mb-4">
+            <div className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-sage-evergreen rounded-full flex items-center justify-center text-white text-sm font-bold">
+                ✓
+              </div>
+              <span className="text-sage-evergreen font-medium">Cart</span>
+            </div>
+            <div className="w-12 h-px bg-sage-evergreen"></div>
+            <div className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-sage-evergreen rounded-full flex items-center justify-center text-white text-sm font-bold">
+                ✓
+              </div>
+              <span className="text-sage-evergreen font-medium">Checkout</span>
+            </div>
+            <div className="w-12 h-px bg-sage-evergreen"></div>
+            <div className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-sage-evergreen rounded-full flex items-center justify-center text-white text-sm font-bold">
+                3
+              </div>
+              <span className="text-sage-evergreen font-medium">Payment</span>
+            </div>
+            <div className="w-12 h-px bg-sage-blush"></div>
+            <div className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-sage-blush rounded-full flex items-center justify-center text-muted-foreground text-sm font-bold">
+                4
+              </div>
+              <span className="text-muted-foreground">Confirmation</span>
+            </div>
+          </div>
+          <div className="flex items-center space-x-2 text-sm justify-center">
             <Link to="/" className="text-sage-evergreen hover:underline">
               Home
             </Link>
             <span className="text-muted-foreground">/</span>
             <Link to="/cart" className="text-sage-evergreen hover:underline">
               Cart
+            </Link>
+            <span className="text-muted-foreground">/</span>
+            <Link
+              to="/checkout"
+              className="text-sage-evergreen hover:underline"
+            >
+              Checkout
             </Link>
             <span className="text-muted-foreground">/</span>
             <span className="text-foreground font-medium">Secure Payment</span>
