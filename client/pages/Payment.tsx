@@ -324,10 +324,12 @@ export default function Payment() {
                 </div>
 
                 {/* Payment Button */}
-                <Button className="w-full bg-sage-evergreen hover:bg-sage-evergreen/90 text-white py-6 text-lg font-semibold">
-                  <Lock className="w-5 h-5 mr-2" />
-                  Complete Secure Payment
-                </Button>
+                <Link to="/order-confirmation" className="w-full block">
+                  <Button className="w-full bg-sage-evergreen hover:bg-sage-evergreen/90 text-white py-6 text-lg font-semibold">
+                    <Lock className="w-5 h-5 mr-2" />
+                    Complete Secure Payment
+                  </Button>
+                </Link>
 
                 {/* Security Notice */}
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground bg-sage-ivory/50 p-3 rounded-lg">
