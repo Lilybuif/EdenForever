@@ -57,6 +57,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        sage: {
+          ivory: "#F4F3F1",
+          blush: "#DCC8BF",
+          sage: "#A1A79E",
+          terracotta: "#B57866",
+          evergreen: "#687560",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
